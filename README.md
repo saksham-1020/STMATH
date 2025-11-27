@@ -1,9 +1,11 @@
-#  STMATH: Unified Math & AI Toolkit for Python
+# STMATH: Unified Math & AI Toolkit for Python
 
-[![PyPI version](https://img.shields.io/pypi/v/stmath.svg)](https://pypi.org/project/stmath/)
-[![Python](https://img.shields.io/pypi/pyversions/stmath.svg)](https://pypi.org/project/stmath/)
-[![License](https://img.shields.io/github/license/saksham-1020/STMATH.svg)](https://github.com/saksham-1020/STMATH/blob/main/LICENSE)
+[![PyPI version](https://img.shields.io/pypi/v/stmath)](https://pypi.org/project/stmath/)
+[![Downloads](https://static.pepy.tech/badge/stmath)](https://pepy.tech/project/stmath)
+[![GitHub stars](https://img.shields.io/github/stars/saksham-1020/STMATH?style=social)](https://github.com/saksham-1020/STMATH/stargazers)
+[![License](https://img.shields.io/github/license/saksham-1020/STMATH)](LICENSE)
 
+> Unified Python toolkit for Math, AI, ML, Quantum, Crypto, Vision, Graphs & GenAI — built for students, researchers, and developers.
 
 ##  What is STMATH?
 
