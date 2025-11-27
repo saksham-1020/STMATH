@@ -1,6 +1,6 @@
 # STMATH: Unified Math & AI Toolkit for Python
 
-[![PyPI version](https://img.shields.io/pypi/v/stmath)](https://pypi.org/project/stmath/)
+[![PyPI version](https://badge.fury.io/py/stmath.svg)](https://pypi.org/project/stmath/)
 [![Downloads](https://static.pepy.tech/badge/stmath)](https://pepy.tech/project/stmath)
 [![GitHub stars](https://img.shields.io/github/stars/saksham-1020/STMATH?style=social)](https://github.com/saksham-1020/STMATH/stargazers)
 [![License](https://img.shields.io/github/license/saksham-1020/STMATH)](LICENSE)
