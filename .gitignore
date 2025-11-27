@@ -1,0 +1,22 @@
+# Python cache and build
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+.coverage
+.DS_Store
+
+# IDE/editor junk
+.vscode/
+.idea/
+*.swp
+*.sublime-workspace
+*.sublime-project
+
+# Test artifacts
+htmlcov/
+.cache/
+*.log
