@@ -140,7 +140,7 @@ print(am.power(2, 3))    # → 8
     - Syntax: `am.percent_change(old, new)`  
     - Example: `am.percent_change(100, 120)` → 20.0  
     - Formula: (new − old) ÷ old × 100  
-```
+``
 ###  Scientific Functions
 ```python
 import stmath as am
@@ -213,7 +213,7 @@ print(am.rad2deg(3.14159))# → 180.0
     - Syntax: `am.rad2deg(rad)`  
     - Example: `am.rad2deg(am.pi)` → 180  
     - Formula: (180 ÷ π) × rad  
-```
+``
 ###  Probability & Statistics
 ```python
 import stmath as am
