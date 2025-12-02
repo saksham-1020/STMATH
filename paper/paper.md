@@ -76,10 +76,10 @@ y_pred = [1, 0, 0]
 
 print(am.f1_score(y_true, y_pred))   # 0.667
 print(am.accuracy(y_true, y_pred))   # 0.667
-
-
+```
 
 
 
 
  
+
