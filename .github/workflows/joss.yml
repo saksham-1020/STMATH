@@ -18,15 +18,14 @@ jobs:
           sudo apt-get install -y pandoc texlive-full
 
       - name: Build PDF
-  run: |
-    mkdir -p paper
-    pandoc paper/paper.md \
-      --pdf-engine=xelatex \
-      --citeproc \
-      --resource-path=paper \
-      --bibliography=reference.bib \
-      -o paper/paper.pdf
-
+        run: |
+          mkdir -p paper
+          pandoc paper/paper.md \
+            --pdf-engine=xelatex \
+            --citeproc \
+            --resource-path=paper \
+            --bibliography=reference.bib \
+            -o paper/paper.pdf
 
       - name: Upload PDF
         uses: actions/upload-artifact@v4
