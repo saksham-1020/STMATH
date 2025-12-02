@@ -7,13 +7,12 @@ on:
 jobs:
   paper:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
       - name: Build paper
-        uses: openjournals/openjournals-draft-action@main
+        uses: openjournals/openjournals-draft-action@v1
         with:
           journal: joss
           paper-path: paper/paper.md
