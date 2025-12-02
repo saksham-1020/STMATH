@@ -15,7 +15,7 @@ jobs:
       - name: Install pandoc and full LaTeX
         run: |
           sudo apt-get update
-          sudo apt-get install -y pandoc texlive-full
+          sudo apt-get install -y pandoc minimal LaTeX
 
       - name: Build PDF
         run: |
