@@ -13,6 +13,9 @@
   <a href="https://github.com/saksham-1020/STMATH/blob/main/LICENSE">
     <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License">
   </a>
+  <a href="https://github.com/saksham-1020/STMATH/actions/workflows/joss.yml">
+  <img src="https://github.com/saksham-1020/STMATH/actions/workflows/joss.yml/badge.svg" alt="CI Status">
+</a>
 </p>
 
 > Unified Python toolkit for Math, AI, ML, Quantum, Crypto, Vision, Graphs & GenAI — built for students, researchers, and developers.
