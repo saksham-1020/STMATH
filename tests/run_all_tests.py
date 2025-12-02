@@ -53,7 +53,7 @@ safe_run(">> 36:", am.bernoulli_pmf, 1, 0.6)
 safe_run(">> 37:", am.binomial_pmf, 2, 5, 0.5)
 safe_run(">> 38:", am.poisson_pmf, 3, 2)
 safe_run(">> 39:", am.exponential_pdf, 2, 1)
-safe_run(">> 40:", am.uniform_pdf, 2, 0, 5)
+safe_run(">> 40:", am.uniform_pdf, 2, 0, 5)   # FIXED
 safe_run(">> 41:", am.t_pdf, 0, 10)
 safe_run(">> 42:", am.chi_square_pdf, 2, 4)
 
@@ -94,13 +94,11 @@ safe_run(">> 67:", am.loan_emi, 500000, 7.5, 240)
 
 print("\n=== CRYPTO ===")
 safe_run(">> 68:", am.sha256, "hello")
-safe_run(">> 69:", am.gas_fee, 21000, 50, 2000)  # gas_used, gwei, eth_price in USD
-
+safe_run(">> 69:", am.gas_fee, 21000, 50, 2000)
 
 print("\n=== QUANTUM ===")
 safe_run(">> 70:", am.hadamard, [1,0])
 safe_run(">> 71:", am.pauli_x, [1,0])
-
 
 print("\n=== APTITUDE ===")
 safe_run(">> 72:", am.profit_percent, 100, 120)
@@ -125,23 +123,8 @@ safe_run(">> 84:", am.lr_cosine_anneal, 0.1, 0.001, 50)
 safe_run(">> 85:", am.momentum_update, [0.5, -0.3], [0.1, -0.2], [0,0], 0.01, 0.9)
 
 print("\n=== GRAPH ===")
-graph_unweighted = {0:[1,2],1:[2],2:[3],3:[]}
 safe_run(">> 86:", am.bfs_distance, {0:[1,2],1:[2],2:[3],3:[]}, 0)
-
-
-graph_weighted = {
-    0: [(1, 4), (2, 1)],
-    1: [(3, 1)],
-    2: [(1, 2), (3, 5)],
-    3: []
-}
-
-
-safe_run(">> 87:", am.dijkstra_shortest_path,
-         {0:{1:4,2:1}, 1:{3:1}, 2:{1:2,3:5}, 3:{}}, 0)
-
-
-
+safe_run(">> 87:", am.dijkstra_shortest_path, {0:{1:4,2:1},1:{3:1},2:{1:2,3:5},3:{}}, 0)
 
 print("\n=== VISION ===")
 safe_run(">> 88:", am.conv2d_output_shape, (64,64), (3,3), 1, 0, 1)
@@ -161,12 +144,11 @@ safe_run(">> 99:", am.catalan_number, 4)
 safe_run(">> 100:", am.divisor_count, 28)
 safe_run(">> 101:", am.divisor_sum, 28)
 
-print("\n=== MATH EXT (spot check from math module) ===")
-
+print("\n=== MATH EXT ===")
 for i, (name, args) in enumerate([
-    ( "sqrt", (144,) ),
-    ( "log2", (8,) ),
-    ( "cosh", (0.0,) ),
+    ("sqrt", (144,)),
+    ("log2", (8,)),
+    ("cosh", (0.0,))
 ], start=102):
     if hasattr(am, name):
         safe_run(f">> {i}:", getattr(am, name), *args)
