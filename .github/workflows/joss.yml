@@ -12,10 +12,10 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Install pandoc and full LaTeX
+      - name: Install pandoc and minimal LaTeX
         run: |
           sudo apt-get update
-          sudo apt-get install -y pandoc minimal LaTeX
+          sudo apt-get install -y pandoc texlive-xetex texlive-latex-base texlive-fonts-recommended texlive-latex-recommended
 
       - name: Build PDF
         run: |
