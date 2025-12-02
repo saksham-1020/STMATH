@@ -2,7 +2,7 @@
 title: "STMATH: Unified Math & AI Toolkit for Python"
 authors:
   - name: Saksham Tomar
-    index: 1
+    affiliation: 1
 orcid: ""
 affiliations:
   - name: Medi-Caps University, Indore, India
@@ -17,5 +17,6 @@ tags:
   - cryptography
   - python
 ---
+
 
 
