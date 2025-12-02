@@ -19,12 +19,10 @@ jobs:
 
       - name: Build PDF
         run: |
-          mkdir -p paper
           pandoc paper/paper.md \
             --pdf-engine=xelatex \
             --citeproc \
-            --resource-path=paper \
-            --bibliography=paper/reference.bib \
+            --bibliography=paper/references.bib \
             -o paper/paper.pdf
 
       - name: Upload PDF
