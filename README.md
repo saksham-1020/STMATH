@@ -15,12 +15,21 @@
   </a>
 </p>
 
-
 > Unified Python toolkit for Math, AI, ML, Quantum, Crypto, Vision, Graphs & GenAI — built for students, researchers, and developers.
 
-##  What is STMATH?
+---
 
-**STMATH** is a modular, educational, and developer-friendly Python library for mathematics, AI, ML, quantum computing, cryptography, vision, graph algorithms, and GenAI helpers. It’s designed for researchers, students, and educators who want clean, reusable functions with perfect documentation and publishing clarity.
+## What is STMATH?
+
+**STMATH** is a modular, educational, and developer-friendly Python library for mathematics, AI, ML, quantum computing, cryptography, vision, graph algorithms, time-series analysis, and GenAI helpers. It is designed for researchers, students, and educators who want clean, reusable functions with consistent APIs and broad domain coverage.
+
+---
+
+## ✅ Statement of Need
+
+Scientific computing in Python is typically fragmented across multiple specialized libraries such as NumPy, SciPy, SymPy, scikit-learn, and domain-specific toolkits for cryptography, optimization, and quantum computing. While powerful, these libraries can be heavy for educational use and rapid interdisciplinary prototyping.
+
+STMATH addresses this gap by providing a **unified, lightweight, and modular mathematical toolkit** that integrates core mathematics, statistics, machine learning metrics, cryptography, quantum utilities, vision mathematics, and optimization into a single coherent API. This design is particularly suited for **students, educators, and early-stage researchers** who require a broad yet consistent computational foundation without complex dependency stacks.
 
 ---
 
@@ -28,38 +37,64 @@
 
 1. [Main Features](#main-features)  
 2. [Installation](#installation)  
-3. [Domains Covered](#domains-covered)  
-4. [ <span style="color:#007acc"><strong>License</strong></span>](#license)  
-5. [Documentation](#documentation)  
-6. [Contributing](#contributing)  
-7. [Benchmarks](#benchmarks)  
-8. [About STMATH](#about-stmath)
+3. [Testing](#testing)  
+4. [Domains Covered](#domains-covered)  
+5. [Citation](#citation)  
+6. [License](#license)  
+7. [Documentation](#documentation)  
+8. [Contributing](#contributing)  
+9. [Benchmarks](#benchmarks)  
+10. [About STMATH](#about-stmath)
 
 ---
 
-##  Main Features
+## Main Features
 
 STMATH offers:
 
-1. Statistics & Probability: mean, median, mode, variance, distributions, Bayes, z-score  
-2. ML Metrics: accuracy, precision, recall, F1, confusion matrix, regression scores  
-3. Deep Learning: relu, sigmoid, softmax, entropy, cross-entropy, KL divergence  
-4. GenAI Math: logits→prob, softmax with temperature, attention scores  
-5. Cryptography: SHA256, gas fee calculator, modular inverse, totient, primes  
-6. Quantum: Hadamard, Pauli gates, quantum state transforms  
-7. Graph Theory: BFS, Dijkstra, shortest paths, adjacency utilities  
-8. Time Series: SMA, EMA, moving averages  
-9. Number Theory: gcd, lcm, primes, totient, Fibonacci, Catalan, divisor tools  
-10. Vision: conv2d/maxpool shapes, IoU, NMS  
-11. Optimization: SGD, Adam, RMSProp, cosine annealing, momentum updates  
-12. Finance: interest, EMI, ROI, CAGR  
-13. Aptitude: profit/loss %, average speed, work/time problems  
-14. Benchmarking: timeit, memory profile, performance comparison  
-15. Math Extensions: factorial, abs, round, floor, ceil, sign, clamp, pow10
+1. Statistics & Probability  
+2. ML Metrics  
+3. Deep Learning Utilities  
+4. GenAI Math Tools  
+5. Cryptography Utilities  
+6. Quantum Computing Helpers  
+7. Graph Algorithms  
+8. Time Series Analysis  
+9. Number Theory  
+10. Vision Utilities  
+11. Optimization Algorithms  
+12. Finance & Aptitude Math  
+13. Benchmarking Tools  
+14. Math Extensions  
+
+> Detailed domain-wise function documentation is provided below for reference and educational use.
+
+## Installation
+
+### First-Time Install (Jupyter / Colab)
+```python
+!pip install stmath
+```
+##  Upgrade to Latest Version
+```python
+!pip install --upgrade stmath
+```
+## Testing
+
+STMATH includes a test suite to verify the correctness of core mathematical, statistical, and algorithmic functions.
+
+To run tests locally:
+
+```bash
+pip install -r requirements.txt
+pytest
+
+```
+
 
 ---
 
-###  Domains Covered
+## Domains Covered
 
 - Core Math & Scientific Functions  
 - Statistics & Probability  
@@ -73,21 +108,15 @@ STMATH offers:
 - Quantum Computing  
 - Time Series Analysis  
 - Number Theory  
-- Benchmarking
+- Benchmarking  
 
-##  Installation
+---
+###  Citation
+Saksham Tomar. STMATH: A Modular Python Library for Unified Mathematical Computing Across Scientific Domains. 2025.  
+GitHub repository: https://github.com/saksham-1020/STMATH
 
-###  First-Time Install (Jupyter/Colab)
-```python
-!pip install stmath
-```
-##  Upgrade to Latest Version
-```python
-!pip install --upgrade stmath
-```
-##  Function Handbook Examples
-
-###  Core Math
+---
+###  Core  Maths Functions
 ```python
 import stmath as am
 
@@ -151,7 +180,7 @@ print(am.power(2, 3))    # → 8
     - Syntax: `am.percent_change(old, new)`  
     - Example: `am.percent_change(100, 120)` → 20.0  
     - Formula: (new − old) ÷ old × 100  
-``
+
 ###  Scientific Functions
 ```python
 import stmath as am
@@ -169,7 +198,6 @@ print(am.deg2rad(180))    # → 3.14159
 print(am.rad2deg(3.14159))# → 180.0
 ```
 ##  Scientific Functions
-
 1. **sin(x)**  
    - Syntax: `am.sin(x)`  
    - Example: `am.sin(am.pi/2)` → 1.0  
@@ -197,13 +225,13 @@ print(am.rad2deg(3.14159))# → 180.0
 
 6. **exp(x)**  
    - Syntax: `am.exp(x)`  
-   - Example: `am.exp(1)` → 2.718…  
+   - Example: `am.exp(1)` → 2.718
    - Formula: eˣ  
 
 7. **factorial(n)**  
    - Syntax: `am.factorial(n)`  
    - Example: `am.factorial(5)` → 120  
-   - Formula: n! = 1 × 2 × 3 … × n  
+   - Formula: n! = 1 × 2 × 3 × ... × n  
 
 8. **gcd(a, b)**  
    - Syntax: `am.gcd(a, b)`  
@@ -224,7 +252,7 @@ print(am.rad2deg(3.14159))# → 180.0
     - Syntax: `am.rad2deg(rad)`  
     - Example: `am.rad2deg(am.pi)` → 180  
     - Formula: (180 ÷ π) × rad  
-``
+
 ###  Probability & Statistics
 ```python
 import stmath as am
@@ -236,7 +264,6 @@ print(am.binomial_pmf(n=5, k=2, p=0.5))  # → 0.3125
 print(am.normal_pdf(x=0, mean=0, sd=1))  # → 0.3989
 ```
 ##  Statistics Functions
-
 1. **mean(data)**  
    - Syntax: `am.mean(data)`  
    - Example: `am.mean([10, 20, 30])` → 20  
@@ -276,9 +303,8 @@ print(am.normal_pdf(x=0, mean=0, sd=1))  # → 0.3989
    - Syntax: `am.z_score(x, mean, std)`  
    - Example: `am.z_score(70, 60, 5)` → 2.0  
    - Formula: (x − μ) ÷ σ  
-``
-##  Probability & Distributions Functions
 
+##  Probability & Distributions Functions
 1. **nCr(n, r)**  
    - Syntax: `am.nCr(n, r)`  
    - Example: `am.nCr(5, 2)` → 10  
@@ -343,7 +369,7 @@ print(am.normal_pdf(x=0, mean=0, sd=1))  # → 0.3989
     - Syntax: `am.chi_square_pdf(x, k)`  
     - Example: `am.chi_square_pdf(2, 4)` → 0.151  
     - Formula: Chi-square distribution formula  
-``
+
 ###  Machine Learning Metrics
 ```python
 import stmath as am
@@ -357,7 +383,6 @@ print(am.recall(y_true, y_pred))     # → 0.66
 print(am.f1_score(y_true, y_pred))   # → 0.8
 ```
 ##  Machine Learning Metrics Functions
-
 1. **accuracy(y_true, y_pred)**  
    - Syntax: `am.accuracy(y_true, y_pred)`  
    - Example: `am.accuracy([1,0,1,1],[1,0,0,1])` → 0.75  
@@ -370,7 +395,7 @@ print(am.f1_score(y_true, y_pred))   # → 0.8
 
 3. **recall(y_true, y_pred)**  
    - Syntax: `am.recall(y_true, y_pred)`  
-   - Example: `am.recall([1,0,1,1],[1,0,0,1])` → 0.666…  
+   - Example: `am.recall([1,0,1,1],[1,0,0,1])` → 0.666 
    - Formula: TP ÷ (TP + FN)  
 
 4. **f1_score(y_true, y_pred)**  
@@ -385,17 +410,17 @@ print(am.f1_score(y_true, y_pred))   # → 0.8
 
 6. **mse(y_true, y_pred)**  
    - Syntax: `am.mse(y_true, y_pred)`  
-   - Example: `am.mse([1,2,3],[1,2,4])` → 0.333…  
+   - Example: `am.mse([1,2,3],[1,2,4])` → 0.333
    - Formula: Σ(yᵢ − ŷᵢ)² ÷ n  
 
 7. **rmse(y_true, y_pred)**  
    - Syntax: `am.rmse(y_true, y_pred)`  
-   - Example: `am.rmse([1,2,3],[1,2,4])` → 0.577…  
+   - Example: `am.rmse([1,2,3],[1,2,4])` → 0.577
    - Formula: √MSE  
 
 8. **mae(y_true, y_pred)**  
    - Syntax: `am.mae(y_true, y_pred)`  
-   - Example: `am.mae([1,2,3],[1,2,4])` → 0.333…  
+   - Example: `am.mae([1,2,3],[1,2,4])` → 0.333
    - Formula: Σ|yᵢ − ŷᵢ| ÷ n  
 
 9. **r2_score(y_true, y_pred)**  
@@ -415,7 +440,6 @@ print(am.recall(y_true, y_pred))     # → 0.66
 print(am.f1_score(y_true, y_pred))   # → 0.8
 ```
 ##  Deep Learning Functions
-
 1. **relu(x)**  
    - Syntax: `am.relu(x)`  
    - Example: `am.relu(-5)` → 0  
@@ -462,7 +486,6 @@ print(am.temperature_softmax(logits, T=2)) # smoother distribution
 print(am.attention([0.2,0.3,0.5]))         # → normalized weights
 ```
 ##  GEN-AI Math Functions
-
 1. **logits_to_prob(logits)**  
    - Syntax: `am.logits_to_prob(logits)`  
    - Example: `am.logits_to_prob([2.0, 1.0, 0.1])` → [0.659, 0.242, 0.099]  
@@ -484,13 +507,12 @@ print(am.attention([0.2,0.3,0.5]))         # → normalized weights
 import stmath as am
 
 print(am.sha256("hello"))  
-# → "2cf24dba5fb0a30e26e83b2ac5b9e29e..."
+# → "2cf24dba5fb0a30e26e83b2ac5b9e29e"
 
 print(am.gas_fee(gas_used=21000, gwei=50, eth_price=2000))  
 # → 2.1 USD (approx)
 ```
 ##  Cryptography Functions
-
 1. **sha256(text)**  
    - Syntax: `am.sha256(text)`  
    - Example: `am.sha256("hello")` → `"2cf24dba5fb0a30e26e83b2ac5b9e29e1b161e5c1fa7425e73043362938b9824"`  
@@ -510,7 +532,6 @@ print(am.pauli_x([1,0]))    # → [0,1]
 print(am.pauli_z([1,0]))    # → [1,0]
 ```
 ##  Quantum Functions
-
 1. **hadamard(state)**  
    - Syntax: `am.hadamard(state)`  
    - Example: `am.hadamard([1,0])` → [0.707, 0.707]  
@@ -536,7 +557,6 @@ print(am.bfs_distance(adj, 0))            # → {0:0, 1:1, 2:1, 3:2}
 print(am.dijkstra_shortest_path(adj, 0))  # shortest paths
 ```
 ##  Graph Theory Functions
-
 1. **bfs_distance(adj, start)**  
    - Syntax: `am.bfs_distance(adj, start)`  
    - Example:  
@@ -565,7 +585,6 @@ print(am.sma(data, 3))   # → [None, None, 2.0, 3.0, 4.0]
 print(am.ema(data, 0.5)) # → exponential moving average
 ```
 ##  Time Series Functions
-
 1. **sma(data, window)**  
    - Syntax: `am.sma(data, window)`  
    - Example: `am.sma([1,2,3,4,5], 3)` → [2.0, 3.0, 4.0]  
@@ -587,7 +606,6 @@ print(am.mod_inverse(3, 11))   # → 4
 print(am.fibonacci(10))        # → 55
 ```
 ##  Number Theory Functions
-
 1. **gcd(a, b)**  
    - Syntax: `am.gcd(a, b)`  
    - Example: `am.gcd(12, 18)` → 6  
@@ -665,7 +683,6 @@ print(am.nms([[0,0,10,10,0.9],[1,1,9,9,0.8]], threshold=0.5))
 # → keep highest confidence box
 ```
 ##  Vision Functions
-
 1. **conv2d_output_shape(input_shape, kernel, stride, padding)**  
    - Syntax: `am.conv2d_output_shape(input_shape, kernel, stride, padding)`  
    - Example: `am.conv2d_output_shape((28,28), (3,3), (1,1), (0,0))` → (26,26)  
@@ -699,7 +716,6 @@ print(am.rmsprop(params, grads, lr=0.01))   # → updated params
 print(am.cosine_anneal(lr=0.1, step=5, T=10)) # → annealed learning rate
 ```
 ##  Optimization Functions
-
 1. **sgd_update(param, grad, lr)**  
    - Syntax: `am.sgd_update(param, grad, lr)`  
    - Example: `am.sgd_update(1.0, 0.1, 0.01)` → 0.999  
@@ -752,7 +768,6 @@ print(am.emi(principal=500000, rate=7.5, years=20))  # → monthly EMI
 print(am.future_value(p=1000, r=10, t=5))     # → 1610.51
 ```
 ##  Finance Functions
-
 1. **simple_interest(principal, rate, time)**  
    - Syntax: `am.simple_interest(principal, rate, time)`  
    - Example: `am.simple_interest(1000, 5, 2)` → 100.0  
@@ -779,7 +794,6 @@ print(am.permutation(n=5, r=2))        # → 20
 print(am.combination(n=5, r=2))        # → 10
 ```
 ##  Aptitude Functions
-
 1. **profit_percent(cost, selling)**  
    - Syntax: `am.profit_percent(cost, selling)`  
    - Example: `am.profit_percent(100, 120)` → 20.0  
@@ -809,7 +823,6 @@ print(am.mem_profile(lambda: am.mul(1000, 2000)))
 print(am.compare_perf(lambda: am.add(10,5), lambda: am.mul(10,5)))
 ```
 ##  Benchmark Functions
-
 1. **timeit(func, *args)**  
    - Syntax: `am.timeit(func, *args)`  
    - Example: `am.timeit(sum, [1,2,3])` → execution time  
@@ -835,11 +848,10 @@ print(am.ceil_val(3.1))        # → 4
 print(am.sign(-10))            # → -1
 ```
 ##  Math Extension Functions
-
 1. **factorial(n)**  
    - Syntax: `am.factorial(n)`  
    - Example: `am.factorial(5)` → 120  
-   - Formula: n! = 1 × 2 × … × n  
+   - Formula: n! = 1 × 2 × 3 × ... × n  
 
 2. **abs_val(x)**  
    - Syntax: `am.abs_val(x)`  
@@ -889,25 +901,23 @@ print(am.sign(-10))            # → -1
 
 
 ---
+## 🧩 Highlights
 
-## 🧩 Unique Highlights
+- Unified Math + AI + Quantum + Crypto + Vision toolkit  
+- Handbook-style API documentation with syntax, examples, and formulas  
+- Designed for educational clarity and reproducible experimentation  
+- Modular domain-wise architecture  
+- Lightweight dependency footprint  
 
-- Unified Math + AI + Quantum + Crypto + Vision  
-- Handbook-style docs with syntax, examples, formulas  
-- Bilingual support (English + Hindi)  
-- Safe testing via `safe_run(...)`  
-- Educational clarity + developer performance  
 
 ---
 
 ## 🪪 License
-
 MIT — free for personal, academic, and commercial use.
 
 ---
 
 ## 📖 Documentation
-
 STMATH follows a handbook-style documentation approach — every function includes syntax, example, and formula.  
 Full documentation will be hosted soon on GitHub Pages or ReadTheDocs.
 
@@ -919,7 +929,6 @@ Coming soon:
 - Test coverage and `safe_run` wrappers  
 
 ---
-
 ## 🤝 Contributing
 
 STMATH welcomes contributions from developers, educators, and researchers.
@@ -940,7 +949,6 @@ You can also:
 ---
 
 ## ℹ️ About STMATH
-
 STMATH is built by [Saksham Tomar](https://www.linkedin.com/in/saksham-tomar), a Python developer and open-source educator.  
 It aims to unify math, AI, and GenAI tooling into a single, clean, and reusable Python library.
 
@@ -955,7 +963,6 @@ If you use STMATH in your project or classroom, feel free to share and star the 
 ---
 
 ## 🔗 Project Links
-
 - 📄 [PyPI Package](https://pypi.org/project/stmath)  
 - 💼 [LinkedIn Profile](https://www.linkedin.com/in/saksham-tomar)  
 - 💻 [GitHub Repo](https://github.com/saksham-1020/STMATH)
