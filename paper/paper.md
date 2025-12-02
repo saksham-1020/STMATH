@@ -25,7 +25,6 @@ STMATH is an open-source Python library that provides a unified collection of ma
 
 The library is designed for fast prototyping, classroom instruction, and interdisciplinary research, enabling users to access core mathematical and AI-related functions without complex setup or heavy dependency management.
 
----
 
 ## Statement of Need
 
@@ -33,7 +32,6 @@ Scientific computing in Python is dominated by large, specialized libraries such
 
 STMATH addresses this problem by offering a unified, lightweight, and modular toolkit that consolidates essential mathematical and AI-related utilities into a single coherent library. It reduces setup friction for educational and experimental workflows while maintaining conceptual clarity and reproducibility. The software is particularly suited for undergraduate education, self-learners, and rapid research prototyping.
 
----
 
 ## Installation
 
@@ -46,7 +44,6 @@ pip install stmath
 ```
 pip install --upgrade stmath
 ```
----
 
 ## Usage Examples
 
@@ -77,13 +74,11 @@ y_pred = [1, 0, 0]
 print(am.f1_score(y_true, y_pred))   # 0.667
 print(am.accuracy(y_true, y_pred))   # 0.667
 ```
----
-### Acknowledgements
+## Acknowledgements
 
 The author would like to acknowledge Medi-Caps University, Indore, for academic support. This work did not receive any specific grant from public, commercial, or not-for-profit funding agencies.
 
----
-### References
+## References
 
 
 
@@ -93,5 +88,6 @@ The author would like to acknowledge Medi-Caps University, Indore, for academic 
 
 
  
+
 
 
