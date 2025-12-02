@@ -21,6 +21,7 @@ tags:
 
 ## Summary
 
+STMATH itself is released as open-source software [@stmath2025].
 STMATH is an open-source Python library that provides a unified collection of mathematical, statistical, machine learning, cryptographic, quantum computing, vision, optimization, and general scientific utilities under a single lightweight API. Unlike traditional scientific stacks that require multiple specialized dependencies, STMATH focuses on educational clarity, modularity, and ease of use for students, researchers, and developers.
 
 The library is designed for fast prototyping, classroom instruction, and interdisciplinary research, enabling users to access core mathematical and AI-related functions without complex setup or heavy dependency management.
@@ -28,7 +29,7 @@ The library is designed for fast prototyping, classroom instruction, and interdi
 
 ## Statement of Need
 
-Scientific computing in Python is dominated by large, specialized libraries such as NumPy [@numpy] and SciPy [@scipy]. While powerful, these ecosystems often impose steep learning curves and heavy dependency structures for beginners and early-stage researchers. Additionally, learners frequently need to combine tools from multiple domains such as statistics, optimization, cryptography, and machine learning, leading to fragmented workflows.
+NumPy [@numpy], SciPy [@scipy], and scikit-learn [@scikit] form the backbone of many scientific and machine learning workflows. Deep learning foundations are well described by Goodfellow et al. [@goodfellow2016deep]. While powerful, these ecosystems often impose steep learning curves and heavy dependency structures for beginners and early-stage researchers. Additionally, learners frequently need to combine tools from multiple domains such as statistics, optimization, cryptography, and machine learning, leading to fragmented workflows.
 
 STMATH addresses this problem by offering a unified, lightweight, and modular toolkit that consolidates essential mathematical and AI-related utilities into a single coherent library. It reduces setup friction for educational and experimental workflows while maintaining conceptual clarity and reproducibility. The software is particularly suited for undergraduate education, self-learners, and rapid research prototyping.
 
@@ -88,6 +89,7 @@ The author would like to acknowledge Medi-Caps University, Indore, for academic 
 
 
  
+
 
 
 
