@@ -1,215 +1,3 @@
-# import aimath as am
-# import docs.generate_docs as dg
-
-# print("\n====================================================")
-# print("🔥 AIMATHX — COMPLETE TEST SUITE (Phase-1 + Phase-2) 🔥")
-# print("====================================================\n")
-
-# # -----------------------------------------------------
-# # BASIC SANITY
-# # -----------------------------------------------------
-# print("math.pi:", am.pi)
-# print("Conv2D:", am.conv2d_output_shape((28,28),(3,3),1,0))
-# print("Softmax Temp:", am.softmax_temperature([1,2,3],0.7))
-# print("Adam sample:", am.adam_update(1.0,0.1,m=0.0,v=0.0,t=1))
-# print("Benchmark sqrt:", am.timeit(am.sqrt, 10000, runs=5))
-# dg.make_md("docs/API.md")
-# print("Docs OK\n")
-
-# # -----------------------------------------------------
-# # PHASE-1 TESTS
-# # -----------------------------------------------------
-# print("\n>>> CORE MATH")
-# print(am.add(10,5), am.square(9), am.mean([10,20,30]))
-
-# print("\n>>> SCIENTIFIC")
-# print(am.sin(1), am.cos(1), am.ln(2.71828), am.exp(3))
-
-# print("\n>>> STATISTICS")
-# data = [10,20,20,30,40]
-# print(am.mean(data), am.median(data), am.mode(data), am.std(data))
-
-# print("\n>>> PROBABILITY")
-# print(am.nCr(5,2), am.normal_pdf(0), am.binomial_pmf(3,10,0.5))
-
-# print("\n>>> ML")
-# y_true=[1,0,1,1,0]
-# y_pred=[1,1,1,0,0]
-# print(am.mse(y_true,y_pred), am.precision(y_true,y_pred))
-
-# print("\n>>> DEEP LEARNING")
-# print(am.sigmoid(2), am.softmax([1,2,3]))
-
-# print("\n>>> NLP")
-# doc=["machine","learning","machine"]
-# corpus=[doc,["deep","learning"],["machine","vision"]]
-# print(am.tfidf("machine",doc,corpus))
-
-# print("\n>>> TIME SERIES")
-# ts = [10,20,30,40,50]
-# print(am.sma(ts,3), am.ema(ts,0.3))
-
-# print("\n>>> FINANCE")
-# print(am.simple_interest(1000,10,2))
-
-# print("\n>>> CRYPTO")
-# print(am.sha256("hello"))
-
-# print("\n>>> QUANTUM")
-# print(am.hadamard([1,0]))
-
-# print("\n>>> APTITUDE")
-# print(am.avg_speed(50,60,50,40))
-
-# print("\n>>> ALGEBRA")
-# print(am.solve_linear(2,6), am.quadratic_roots(1,5,6))
-
-
-# # -----------------------------------------------------
-# # PHASE-2 TESTS
-# # -----------------------------------------------------
-
-# print("\n>>> GEN-AI")
-# print(am.logits_to_prob([1,2,3]))
-# print(am.softmax_temperature([1,2,3],0.7))
-# print(am.attention_scores([[1,0],[0,1]], [[1,2],[2,1]]))
-
-# print("\n>>> OPTIMIZERS")
-# print(am.sgd_update(1.0, 0.1))
-# print(am.adam_update(1.0, 0.1, m=0.0, v=0.0, t=1))
-# print(am.rmsprop_update(1.0, 0.1, s=0.0))
-# print(am.lr_step_decay(0.01, epoch=25))
-# print(am.lr_cosine_anneal(0, 100, 1))
-# print(am.momentum_update(1.0, 0.1, velocity=0.0))   # ← FIX HERE
-
-   
-
-# print("\n>>> GRAPH")
-# print(am.bfs_distance({'A':['B','C'],'B':['D'],'C':[], 'D':[]}, "A"))
-# print(am.dijkstra_shortest_path({
-#     'A':[('B',3)],
-#     'B':[('C',4)],
-#     'C':[]
-# }, "A"))
-
-# print("\n>>> VISION")
-# print(am.conv2d_output_shape((28,28),(3,3),1,0))
-# print(am.maxpool_output_shape((28,28),2,2))
-# print(am.iou((0,0,2,2),(1,1,3,3)))
-# print(am.nms([(0,0,2,2,0.9),(1,1,3,3,0.8)]))
-
-# print("\n🎯 ALL TESTS PASSED — AIMATHX FULL LIBRARY WORKING!")
-
-
-
-# import stmath as am
-# import docs.generate_docs as dg
-
-# print("\n====================================================")
-# print("🔥 AIMATHX — COMPLETE TEST SUITE (Phase-1 + Phase-2) 🔥")
-# print("====================================================\n")
-
-# # -----------------------------------------------------
-# # BASIC SANITY
-# # -----------------------------------------------------
-# print("math.pi:", am.pi)
-# print("Conv2D:", am.conv2d_output_shape((28, 28), (3, 3), 1, 0))
-# print("Softmax Temp:", am.softmax_temperature([1, 2, 3], 0.7))
-# print("Adam sample:", am.adam_update(1.0, 0.1, m=0.0, v=0.0, t=1))
-# print("Benchmark sqrt:", am.timeit(am.sqrt, 10000, runs=5))
-# dg.make_md("docs/API.md")
-# print("Docs OK\n")
-
-# # -----------------------------------------------------
-# # PHASE-1 TESTS
-# # -----------------------------------------------------
-# print("\n>>> CORE MATH")
-# print(am.add(10, 5), am.square(9), am.mean([10, 20, 30]))
-
-# print("\n>>> SCIENTIFIC")
-# print(am.sin(1), am.cos(1), am.ln(2.71828), am.exp(3))
-
-# print("\n>>> STATISTICS")
-# data = [10, 20, 20, 30, 40]
-# print(am.mean(data), am.median(data), am.mode(data), am.std(data))
-
-# print("\n>>> PROBABILITY")
-# print(am.nCr(5, 2), am.normal_pdf(0), am.binomial_pmf(3, 10, 0.5))
-
-# print("\n>>> ML")
-# y_true = [1, 0, 1, 1, 0]
-# y_pred = [1, 1, 1, 0, 0]
-# print(am.mse(y_true, y_pred), am.precision(y_true, y_pred))
-
-# print("\n>>> DEEP LEARNING")
-# print(am.sigmoid(2), am.softmax([1, 2, 3]))
-
-# print("\n>>> NLP")
-# doc = ["machine", "learning", "machine"]
-# corpus = [doc, ["deep", "learning"], ["machine", "vision"]]
-# print(am.tfidf("machine", doc, corpus))
-
-# print("\n>>> TIME SERIES")
-# ts = [10, 20, 30, 40, 50]
-# print(am.sma(ts, 3), am.ema(ts, 0.3))
-
-# print("\n>>> FINANCE")
-# print(am.simple_interest(1000, 10, 2))
-
-# print("\n>>> CRYPTO")
-# print(am.sha256("hello"))
-
-# print("\n>>> QUANTUM")
-# print(am.hadamard([1, 0]))
-
-# print("\n>>> APTITUDE")
-# print(am.avg_speed(50, 60, 50, 40))
-
-# print("\n>>> ALGEBRA")
-# print(am.solve_linear(2, 6), am.quadratic_roots(1, 5, 6))
-
-# # -----------------------------------------------------
-# # PHASE-2 TESTS
-# # -----------------------------------------------------
-# print("\n>>> GEN-AI")
-# print(am.logits_to_prob([1, 2, 3]))
-# print(am.softmax_temperature([1, 2, 3], 0.7))
-# print(am.attention_scores([[1, 0], [0, 1]], [[1, 2], [2, 1]]))
-
-# print("\n>>> OPTIMIZERS")
-# print(am.sgd_update(1.0, 0.1))
-# print(am.adam_update(1.0, 0.1, m=0.0, v=0.0, t=1))
-# print(am.rmsprop_update(1.0, 0.1, s=0.0))
-# print(am.lr_step_decay(0.01, epoch=25))
-# print(am.lr_cosine_anneal(0, 100, 1))
-# print(am.momentum_update(1.0, 0.1, velocity=0.0))  # ← FIX HERE if needed
-
-# print("\n>>> GRAPH")
-# print(am.bfs_distance({'A': ['B', 'C'], 'B': ['D'], 'C': [], 'D': []}, "A"))
-# print(am.dijkstra_shortest_path({
-#     'A': [('B', 3)],
-#     'B': [('C', 4)],
-#     'C': []
-# }, "A"))
-
-# print("\n>>> VISION")
-# print(am.conv2d_output_shape((28, 28), (3, 3), 1, 0))
-# print(am.maxpool_output_shape((28, 28), 2, 2))
-# print(am.iou((0, 0, 2, 2), (1, 1, 3, 3)))
-# print(am.nms([(0, 0, 2, 2, 0.9), (1, 1, 3, 3, 0.8)]))
-
-# print("\n🎯 ALL TESTS PASSED — AIMATHX FULL LIBRARY WORKING!")
-
-
-# import stmath as am
-
-# print(am.gcd(48, 18))        # 6
-# print(am.is_prime(29))       # True
-# print(am.fibonacci(7))       # 13
-# print(am.divisor_sum(28))    # 56
-# print(am.is_prime(29))
-
-
 import stmath as am
 
 def safe_run(label, func, *args, **kwargs):
@@ -337,17 +125,18 @@ safe_run(">> 84:", am.lr_cosine_anneal, 0.1, 0.001, 50)
 safe_run(">> 85:", am.momentum_update, [0.5, -0.3], [0.1, -0.2], [0,0], 0.01, 0.9)
 
 print("\n=== GRAPH ===")
-# safe_run(">> 86:", am.bfs_distance, {0:[1,2],1:[2],2:[3],3:[]}, 0)
 graph_unweighted = {0:[1,2],1:[2],2:[3],3:[]}
 safe_run(">> 86:", am.bfs_distance, {0:[1,2],1:[2],2:[3],3:[]}, 0)
 
-# safe_run(">> 87:", am.dijkstra_shortest_path, {0:[(1,4),(2,1)],1:[(3,1)],2:[(1,2),(3,5)],3:[]}, 0)
-graph_adj = {
-    0: [(1,4),(2,1)],
-    1: [(3,1)],
-    2: [(1,2),(3,5)],
+
+graph_weighted = {
+    0: [(1, 4), (2, 1)],
+    1: [(3, 1)],
+    2: [(1, 2), (3, 5)],
     3: []
 }
+
+
 safe_run(">> 87:", am.dijkstra_shortest_path,
          {0:{1:4,2:1}, 1:{3:1}, 2:{1:2,3:5}, 3:{}}, 0)
 
@@ -373,7 +162,7 @@ safe_run(">> 100:", am.divisor_count, 28)
 safe_run(">> 101:", am.divisor_sum, 28)
 
 print("\n=== MATH EXT (spot check from math module) ===")
-# Only if these are re-exported: may vary with build
+
 for i, (name, args) in enumerate([
     ( "sqrt", (144,) ),
     ( "log2", (8,) ),
