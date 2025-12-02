@@ -77,9 +77,21 @@ y_pred = [1, 0, 0]
 print(am.f1_score(y_true, y_pred))   # 0.667
 print(am.accuracy(y_true, y_pred))   # 0.667
 ```
+---
+### Acknowledgements
+
+The author would like to acknowledge Medi-Caps University, Indore, for academic support. This work did not receive any specific grant from public, commercial, or not-for-profit funding agencies.
+
+---
+### References
+
+
+
+
 
 
 
 
  
+
 
