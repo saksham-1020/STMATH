@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "stmath"
-version = "1.0.7"
+version = "1.0.8"
 description = "The Next-Generation Unified Math + AI + ML + Quantum Engine"
 readme = "README.md"
 license = { text = "MIT" }
