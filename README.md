@@ -2,7 +2,7 @@
 
 <p align="center">
   <a href="https://pypi.org/project/stmath/">
-    <img src="https://badge.fury.io/py/stmath.svg" alt="PyPI version">
+    <img src="https://img.shields.io/pypi/v/stmath?color=green" alt="PyPI version">
   </a>
   <a href="https://pepy.tech/project/stmath">
     <img src="https://pepy.tech/badge/stmath" alt="Downloads">
