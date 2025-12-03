@@ -68,7 +68,6 @@ STMATH offers:
 11. Optimization Algorithms  
 12. Finance & Aptitude Math  
 13. Benchmarking Tools  
-14. Math Extensions  
 
 > Detailed domain-wise function documentation is provided below for reference and educational use.
 
@@ -236,22 +235,12 @@ print(am.rad2deg(3.14159))# → 180.0
    - Example: `am.factorial(5)` → 120  
    - Formula: n! = 1 × 2 × 3 × ... × n  
 
-8. **gcd(a, b)**  
-   - Syntax: `am.gcd(a, b)`  
-   - Example: `am.gcd(12, 18)` → 6  
-   - Formula: gcd(a, b)  
-
-9. **lcm(a, b)**  
-   - Syntax: `am.lcm(a, b)`  
-   - Example: `am.lcm(12, 18)` → 36  
-   - Formula: lcm(a, b)  
-
-10. **deg2rad(deg)**  
+8. **deg2rad(deg)**  
     - Syntax: `am.deg2rad(deg)`  
     - Example: `am.deg2rad(180)` → 3.14159  
     - Formula: (π ÷ 180) × deg  
 
-11. **rad2deg(rad)**  
+9. **rad2deg(rad)**  
     - Syntax: `am.rad2deg(rad)`  
     - Example: `am.rad2deg(am.pi)` → 180  
     - Formula: (180 ÷ π) × rad  
@@ -405,11 +394,6 @@ print(am.f1_score(y_true, y_pred))   # → 0.8
    - Syntax: `am.f1_score(y_true, y_pred)`  
    - Example: `am.f1_score([1,0,1,1],[1,0,0,1])` → 0.8  
    - Formula: 2 × (precision × recall) ÷ (precision + recall)  
-
-5. **confusion_matrix(y_true, y_pred)**  
-   - Syntax: `am.confusion_matrix(y_true, y_pred)`  
-   - Example: `am.confusion_matrix([1,0,1,1],[1,0,0,1])` → [[1,0],[1,2]]  
-   - Formula: matrix of TP, TN, FP, FN counts  
 
 6. **mse(y_true, y_pred)**  
    - Syntax: `am.mse(y_true, y_pred)`  
@@ -792,9 +776,7 @@ import stmath as am
 
 print(am.percent(50, 200))             # → 25.0
 print(am.percent_change(100, 120))     # → 20.0
-print(am.ratio(2, 5))                  # → "2:5"
-print(am.permutation(n=5, r=2))        # → 20
-print(am.combination(n=5, r=2))        # → 10
+print(am.profit_percent(100, 120))     # → 20.0  
 ```
 ##  Aptitude Functions
 1. **profit_percent(cost, selling)**  
@@ -820,10 +802,7 @@ import stmath as am
 print(am.timeit(lambda: am.add(10, 5)))  
 
 # Memory usage of a function
-print(am.mem_profile(lambda: am.mul(1000, 2000)))  
-
-# Compare two functions
-print(am.compare_perf(lambda: am.add(10,5), lambda: am.mul(10,5)))
+print(am.mem_profile(lambda: am.mul(1000, 2000)))
 ```
 ##  Benchmark Functions
 1. **timeit(func, *args)**  
@@ -835,74 +814,6 @@ print(am.compare_perf(lambda: am.add(10,5), lambda: am.mul(10,5)))
    - Syntax: `am.mem_profile(func, *args)`  
    - Example: `am.mem_profile(sum, [1,2,3])` → memory usage  
    - Formula: measures memory usage of function  
-
-###  Math Extensions
-```python
-import stmath as am
-
-y_true = [1,0,1,1]
-y_pred = [1,0,0,1]
-
-print(am.factorial(5))         # → 120
-print(am.abs_val(-42))         # → 42
-print(am.round_val(3.14159, 2))# → 3.14
-print(am.floor_val(3.9))       # → 3
-print(am.ceil_val(3.1))        # → 4
-print(am.sign(-10))            # → -1
-```
-##  Math Extension Functions
-1. **factorial(n)**  
-   - Syntax: `am.factorial(n)`  
-   - Example: `am.factorial(5)` → 120  
-   - Formula: n! = 1 × 2 × 3 × ... × n  
-
-2. **abs_val(x)**  
-   - Syntax: `am.abs_val(x)`  
-   - Example: `am.abs_val(-42)` → 42  
-   - Formula: |x|  
-
-3. **round_val(x, decimals)**  
-   - Syntax: `am.round_val(x, decimals)`  
-   - Example: `am.round_val(3.14159, 2)` → 3.14  
-   - Formula: round(x, decimals)  
-
-4. **floor_val(x)**  
-   - Syntax: `am.floor_val(x)`  
-   - Example: `am.floor_val(3.9)` → 3  
-   - Formula: ⌊x⌋ (greatest integer ≤ x)  
-
-5. **ceil_val(x)**  
-   - Syntax: `am.ceil_val(x)`  
-   - Example: `am.ceil_val(3.1)` → 4  
-   - Formula: ⌈x⌉ (smallest integer ≥ x)  
-
-6. **sign(x)**  
-   - Syntax: `am.sign(x)`  
-   - Example: `am.sign(-10)` → −1  
-   - Formula: returns −1 if x < 0, 0 if x = 0, 1 if x > 0  
-
-7. **max_val(values)**  
-   - Syntax: `am.max_val(values)`  
-   - Example: `am.max_val([1, 5, 3])` → 5  
-   - Formula: maximum element in list  
-
-8. **min_val(values)**  
-   - Syntax: `am.min_val(values)`  
-   - Example: `am.min_val([1, 5, 3])` → 1  
-   - Formula: minimum element in list  
-
-9. **clamp(x, low, high)**  
-   - Syntax: `am.clamp(x, low, high)`  
-   - Example: `am.clamp(15, 0, 10)` → 10  
-   - Formula: restricts x within [low, high]  
-
-10. **pow10(n)**  
-    - Syntax: `am.pow10(n)`  
-    - Example: `am.pow10(3)` → 1000  
-    - Formula: 10ⁿ  
-
-
-
 ---
 ## 🧩 Highlights
 
