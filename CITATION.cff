@@ -1,7 +1,7 @@
 cff-version: 1.2.0
 message: "If you use STMATH in your research, please cite it as below."
 title: "STMATH: Unified Math & AI Toolkit for Python"
-version: "1.0.7"
+version: "1.0.8"
 doi: ""
 date-released: 2025-12-02
 url: "https://github.com/saksham-1020/STMATH"
@@ -22,3 +22,4 @@ keywords:
   - quantum-computing
   - cryptography
   - python
+
