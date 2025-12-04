@@ -25,6 +25,8 @@ STMATH itself is released as open-source software [@stmath2025].
 STMATH is an open-source Python library that provides a unified collection of mathematical, statistical, machine learning, cryptographic, quantum computing, vision, optimization, and general scientific utilities under a single lightweight API. Unlike traditional scientific stacks that require multiple specialized dependencies, STMATH focuses on educational clarity, modularity, and ease of use for students, researchers, and developers.
 
 The library is designed for fast prototyping, classroom instruction, and interdisciplinary research, enabling users to access core mathematical and AI-related functions without complex setup or heavy dependency management.
+The STMATH software is archived on Zenodo with DOI: 10.5281/zenodo.17818642.
+
 
 
 ## Statement of Need
@@ -89,6 +91,7 @@ The author would like to acknowledge Medi-Caps University, Indore, for academic 
 
 
  
+
 
 
 
