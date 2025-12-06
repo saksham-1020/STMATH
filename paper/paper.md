@@ -8,7 +8,7 @@ affiliations:
   - name: Medi-Caps University, Indore, India
     index: 1
 date: 2025-12-02
-bibliography: paper/references.bib
+bibliography: references.bib
 tags:
   - mathematics
   - scientific-computing
@@ -91,6 +91,7 @@ The author would like to acknowledge Medi-Caps University, Indore, for academic 
 
 
  
+
 
 
 
