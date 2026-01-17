@@ -20,21 +20,28 @@ tags:
 # STMATH: Unified Math & AI Toolkit for Python
 
 ## Summary
+STMATH is an open-source Python library designed primarily for educational use in mathematics, data science, and introductory artificial intelligence. The library provides a unified and lightweight interface for performing common mathematical, statistical, and machine learning operations, making it suitable for undergraduate students, self-learners, and instructors.
 
-STMATH itself is released as open-source software [@stmath2025].
-STMATH is an open-source Python library that provides a unified collection of mathematical, statistical, machine learning, cryptographic, quantum computing, vision, optimization, and general scientific utilities under a single lightweight API. Unlike traditional scientific stacks that require multiple specialized dependencies, STMATH focuses on educational clarity, modularity, and ease of use for students, researchers, and developers.
-
-The library is designed for fast prototyping, classroom instruction, and interdisciplinary research, enabling users to access core mathematical and AI-related functions without complex setup or heavy dependency management.
-The STMATH software is archived on Zenodo with DOI: 10.5281/zenodo.17818642.
-
-
+Unlike traditional scientific Python stacks that require learners to navigate multiple complex libraries, STMATH emphasizes conceptual clarity and ease of use. It enables students to experiment with mathematical concepts and basic AI metrics using a single, consistent API. The software is intended for classroom demonstrations, lab assignments, and early-stage experimentation in interdisciplinary courses.
 
 ## Statement of Need
 
-NumPy [@numpy], SciPy [@scipy], and scikit-learn [@scikit] form the backbone of many scientific and machine learning workflows. Deep learning foundations are well described by Goodfellow et al. [@goodfellow2016deep]. While powerful, these ecosystems often impose steep learning curves and heavy dependency structures for beginners and early-stage researchers. Additionally, learners frequently need to combine tools from multiple domains such as statistics, optimization, cryptography, and machine learning, leading to fragmented workflows.
+Students learning scientific computing and introductory machine learning are often required to work with multiple specialized Python libraries such as NumPy, SciPy, and scikit-learn. While these tools are powerful, their combined complexity can be overwhelming for beginners and can distract from core learning objectives.
 
-STMATH addresses this problem by offering a unified, lightweight, and modular toolkit that consolidates essential mathematical and AI-related utilities into a single coherent library. It reduces setup friction for educational and experimental workflows while maintaining conceptual clarity and reproducibility. The software is particularly suited for undergraduate education, self-learners, and rapid research prototyping.
+STMATH addresses this challenge by offering a unified and simplified toolkit that brings together essential mathematical, statistical, and basic machine learning utilities under a single interface. By reducing setup complexity and minimizing cognitive overhead, STMATH allows learners to focus on understanding fundamental concepts rather than managing multiple dependencies. The software is particularly useful in undergraduate coursework, self-guided learning, and rapid prototyping environments.
 
+## Educational Use and Learning Outcomes
+
+STMATH is designed to support teaching and learning in undergraduate-level mathematics, data science, and introductory artificial intelligence courses. The software can be used by students to explore mathematical operations, statistical measures, and evaluation metrics in a hands-on manner.
+
+By using STMATH, learners can:
+- Understand basic mathematical and statistical concepts through simple function calls
+- Experiment with machine learning evaluation metrics without requiring full model implementations
+- Develop confidence in Python-based scientific computing through a unified and consistent interface
+
+Instructors can integrate STMATH into laboratory sessions, assignments, or demonstrations to illustrate foundational concepts in applied mathematics and AI with minimal setup overhead.
+
+The software is most suitable for first- and second-year undergraduate courses.
 
 ## Installation
 
@@ -49,6 +56,7 @@ pip install --upgrade stmath
 ```
 
 ## Usage Examples
+The following examples illustrate how STMATH can be used by students to explore core mathematical and machine learning concepts.
 
 ### Basic Mathematical Operations
 
@@ -77,6 +85,25 @@ y_pred = [1, 0, 0]
 print(am.f1_score(y_true, y_pred))   # 0.667
 print(am.accuracy(y_true, y_pred))   # 0.667
 ```
+### Cryptography 
+```python
+import stmath as am
+
+print(am.sha256("hello"))  
+# → "2cf24dba5fb0a30e26e83b2ac5b9e29e"
+
+print(am.gas_fee(gas_used=21000, gwei=50, eth_price=2000))  
+# → 2.1 USD (approx)
+```
+### Quantum Function
+```python
+import stmath as am
+
+print(am.hadamard([1,0]))   # → [0.707, 0.707]
+print(am.pauli_x([1,0]))    # → [0,1]
+print(am.pauli_z([1,0]))    # → [1,0]
+```
+
 ## Acknowledgements
 
 The author would like to acknowledge Medi-Caps University, Indore, for academic support. This work did not receive any specific grant from public, commercial, or not-for-profit funding agencies.
@@ -90,7 +117,9 @@ The author would like to acknowledge Medi-Caps University, Indore, for academic 
 
 
 
+
  
+
 
 
 
