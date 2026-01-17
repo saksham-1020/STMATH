@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='stmath',
-    version='1.0.9',
+    version='1.0.10',
     author='Saksham Tomar',
     description='The Next-Generation Unified Math + AI + ML + Quantum Engine',
     long_description=open('README.md', encoding='utf-8').read(),
