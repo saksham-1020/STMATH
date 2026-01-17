@@ -410,19 +410,9 @@ print(am.f1_score(y_true, y_pred))   # → 0.8
 9. **r2_score(y_true, y_pred)**  
    - Syntax: `am.r2_score(y_true, y_pred)`  
    - Example: `am.r2_score([1,2,3],[1,2,4])` → 0.9  
-   - Formula: 1 − (Σ(yᵢ − ŷᵢ)² ÷ Σ(yᵢ − ȳ)²)  
-   ###  Deep Learning Functions
-```python
-import stmath as am
+   - Formula: 1 − (Σ(yᵢ − ŷᵢ)² ÷ Σ(yᵢ − ȳ)²)
 
-y_true = [1,0,1,1]
-y_pred = [1,0,0,1]
-
-print(am.accuracy(y_true, y_pred))   # → 0.75
-print(am.precision(y_true, y_pred))  # → 1.0
-print(am.recall(y_true, y_pred))     # → 0.66
-print(am.f1_score(y_true, y_pred))   # → 0.8
-```
+     
 ##  Deep Learning Functions
 1. **relu(x)**  
    - Syntax: `am.relu(x)`  
