@@ -22,13 +22,15 @@ tags:
 ## Summary
 STMATH is an open-source Python library designed primarily for educational use in mathematics, data science, and introductory artificial intelligence. The library provides a unified and lightweight interface for performing common mathematical, statistical, and machine learning operations, making it suitable for undergraduate students, self-learners, and instructors.
 
-Unlike traditional scientific Python stacks that require learners to navigate multiple complex libraries, STMATH emphasizes conceptual clarity and ease of use. It enables students to experiment with mathematical concepts and basic AI metrics using a single, consistent API. The software is intended for classroom demonstrations, lab assignments, and early-stage experimentation in interdisciplinary courses.
+Unlike traditional scientific Python stacks that require learners to navigate multiple complex libraries, STMATH emphasizes conceptual clarity and ease of use. It enables students to experiment with mathematical concepts and basic AI metrics using a single, consistent API. The software is intended for classroom demonstrations, lab assignments, and early-stage experimentation in interdisciplinary courses. The STMATH software is archived on Zenodo and cited as an open-source educational resource [@stmath2025].
+
 
 ## Statement of Need
 
-Students learning scientific computing and introductory machine learning are often required to work with multiple specialized Python libraries such as NumPy, SciPy, and scikit-learn. While these tools are powerful, their combined complexity can be overwhelming for beginners and can distract from core learning objectives.
+Students learning scientific computing and introductory machine learning are often required to work with multiple specialized Python libraries such as NumPy [@numpy], SciPy [@scipy], and scikit-learn [@scikit]. While these tools are powerful, their combined complexity can be overwhelming for beginners and can distract from core learning objectives.
 
-STMATH addresses this challenge by offering a unified and simplified toolkit that brings together essential mathematical, statistical, and basic machine learning utilities under a single interface. By reducing setup complexity and minimizing cognitive overhead, STMATH allows learners to focus on understanding fundamental concepts rather than managing multiple dependencies. The software is particularly useful in undergraduate coursework, self-guided learning, and rapid prototyping environments.
+STMATH addresses this challenge by offering a unified and simplified toolkit that brings together essential mathematical, statistical, and basic machine learning utilities under a single interface. By reducing setup complexity and minimizing cognitive overhead, STMATH allows learners to focus on understanding fundamental concepts rather than managing multiple dependencies. The software is particularly useful in undergraduate coursework, self-guided learning, and rapid prototyping environments. Foundational concepts in machine learning are discussed in standard educational resources such as Goodfellow et al. [@goodfellow2016deep].
+
 
 ## Educational Use and Learning Outcomes
 
@@ -119,6 +121,7 @@ The author would like to acknowledge Medi-Caps University, Indore, for academic 
 
 
  
+
 
 
 
