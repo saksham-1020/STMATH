@@ -2,9 +2,9 @@ from setuptools import setup, find_packages
 
 setup(
     name='stmath',
-    version='1.0.10',
+    version='1.0.14',
     author='Saksham Tomar',
-    description='The Next-Generation Unified Math + AI + ML + Quantum Engine',
+    description='Unified Zero-Wrapper Math & AI Framework',
     long_description=open('README.md', encoding='utf-8').read(),
     long_description_content_type='text/markdown',
     packages=find_packages(),

@@ -4,36 +4,52 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "stmath"
-version = "1.0.10"
-description = "The Next-Generation Unified Math + AI + ML + Quantum Engine"
+version = "1.0.14"
+description = "STMATH: A Zero-Wrapper Unified Mathematical and AI Framework built from First Principles"
 readme = "README.md"
+requires-python = ">=3.8"
 license = { text = "MIT" }
+
 authors = [
   { name = "Saksham Tomar", email = "saksham@example.com" }
 ]
-requires-python = ">=3.8"
+
 keywords = [
-  "math", "ai", "ml", "quantum", "genai","crypto", "optimization", "vision", "stmath"
+  "mathematics", "numerical computing", "machine learning", "deep learning",
+  "nlp", "computer vision", "genai", "transformer", "autograd", "zero wrapper"
 ]
+
 classifiers = [
   "Development Status :: 5 - Production/Stable",
+  "Intended Audience :: Developers",
   "Intended Audience :: Education",
   "Intended Audience :: Science/Research",
   "License :: OSI Approved :: MIT License",
   "Programming Language :: Python :: 3",
-  "Programming Language :: Python :: 3.8",
-  "Programming Language :: Python :: 3.9",
-  "Programming Language :: Python :: 3.10",
-  "Programming Language :: Python :: 3.11",
   "Operating System :: OS Independent",
-  "Topic :: Scientific/Engineering :: Mathematics",
-  "Topic :: Software Development :: Libraries :: Python Modules"
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+  "Topic :: Scientific/Engineering :: Mathematics"
 ]
+
+dependencies = []
 
 [project.urls]
 Homepage = "https://github.com/stmath-org/stmath"
 Documentation = "https://stmath-org.github.io/docs"
-Source = "https://github.com/stmath-org/stmath"
+Repository = "https://github.com/stmath-org/stmath"
 Issues = "https://github.com/stmath-org/stmath/issues"
 PyPI = "https://pypi.org/project/stmath/"
 LinkedIn = "https://www.linkedin.com/in/sakshamtomar55/"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["stmath*"]
+
+[tool.setuptools.package-data]
+stmath = ["docs/*.md"]
+
+[tool.setuptools.exclude-package-data]
+stmath = ["__pycache__", "*.pyc"]

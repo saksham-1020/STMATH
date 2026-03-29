@@ -1,76 +1,159 @@
-# Code of Conduct
+# 🛡️ STMATH Code of Conduct
 
-## Our Pledge
+## 🌍 Our Commitment
 
-We as members, contributors, and maintainers of **STMATH** pledge to make participation in our community a harassment-free experience for everyone, regardless of age, body size, visible or invisible disability, ethnicity, sex characteristics, gender identity and expression, level of experience, education, socio-economic status, nationality, personal appearance, race, religion, or sexual identity and orientation.
+We, as contributors, maintainers, and community members of **STMATH**, are committed to fostering an open, respectful, and inclusive environment.
 
-We pledge to act and interact in ways that contribute to an open, welcoming, diverse, inclusive, and healthy community.
+STMATH is a **research-driven, educational, and engineering-focused framework**, and we expect all participants to uphold the highest standards of professionalism.
 
----
+We pledge to ensure that participation in STMATH is a **harassment-free experience for everyone**, regardless of:
 
-## Our Standards
-
-Examples of behavior that contributes to a positive environment include:
-
-- Demonstrating empathy and kindness toward other people  
-- Being respectful of differing opinions, viewpoints, and experiences  
-- Giving and gracefully accepting constructive feedback  
-- Accepting responsibility and apologizing to those affected by our mistakes  
-- Focusing on what is best for the community  
-
-Examples of unacceptable behavior include:
-
-- The use of sexualized language or imagery  
-- Trolling, insulting or derogatory comments, and personal or political attacks  
-- Public or private harassment  
-- Publishing others’ private information without explicit permission  
-- Other conduct which could reasonably be considered inappropriate in a professional setting  
+* Age
+* Body size
+* Disability (visible or invisible)
+* Ethnicity
+* Gender identity and expression
+* Level of experience
+* Education
+* Socio-economic status
+* Nationality
+* Personal appearance
+* Race
+* Religion
+* Sexual identity and orientation
 
 ---
 
-## Enforcement Responsibilities
+## 🧠 Community Philosophy
 
-Project maintainers are responsible for clarifying and enforcing our standards of acceptable behavior.  
-They have the right and responsibility to remove, edit, or reject comments, commits, code, issues, and other contributions that are not aligned with this Code of Conduct.
+STMATH is built on:
 
----
+* ✔ Respect
+* ✔ Transparency
+* ✔ First-principles thinking
+* ✔ Collaborative learning
 
-## Scope
-
-This Code of Conduct applies within all community spaces and also applies when an individual is officially representing **STMATH** in public spaces, including GitHub, email communications, and community discussions.
-
----
-
-## Enforcement
-
-Instances of abusive, harassing, or otherwise unacceptable behavior may be reported by contacting the project maintainer:
-
-**Saksham Tomar**  
-Email: **tomarsaksham55@gmail.com**
-
-All complaints will be reviewed and investigated promptly and fairly.
-
-Project maintainers who do not follow or enforce the Code of Conduct in good faith may face temporary or permanent repercussions.
+👉 We expect contributors to reflect these values in all interactions.
 
 ---
 
-## Enforcement Guidelines
+## ✅ Expected Behavior
 
-### 1. Correction  
-Private, non-punitive correction of minor unprofessional behavior.
+The following behaviors contribute to a positive community:
 
-### 2. Warning  
-A formal warning when violations continue.
-
-### 3. Temporary Ban  
-Temporary removal from community interaction.
-
-### 4. Permanent Ban  
-Permanent removal for repeated or severe violations.
+* Demonstrating empathy and kindness
+* Respecting differing opinions and viewpoints
+* Providing constructive and professional feedback
+* Accepting responsibility and learning from mistakes
+* Focusing on collective improvement
 
 ---
 
-## Attribution
+## ❌ Unacceptable Behavior
 
-This Code of Conduct is adapted from the **Contributor Covenant**, version 2.1  
+The following will not be tolerated:
+
+* Harassment, intimidation, or discrimination
+* Offensive, derogatory, or insulting language
+* Personal or political attacks
+* Sharing private information without consent
+* Any behavior deemed inappropriate in a professional or academic setting
+
+---
+
+## ⚖️ Enforcement Responsibilities
+
+Project maintainers are responsible for:
+
+* Enforcing this Code of Conduct
+* Reviewing contributions and interactions
+* Taking appropriate action when violations occur
+
+Maintainers have the right to:
+
+* Remove or edit content
+* Reject contributions
+* Restrict participation
+
+---
+
+## 🌐 Scope
+
+This Code of Conduct applies to all STMATH spaces:
+
+* GitHub repositories
+* Issues and Pull Requests
+* Discussions and community forums
+* Emails and external communication
+* Any public representation of STMATH
+
+---
+
+## 🚨 Reporting Violations
+
+If you experience or witness unacceptable behavior, please report it:
+
+**Maintainer:** Saksham Tomar
+📧 Email: **[tomarsaksham55@gmail.com](mailto:tomarsaksham55@gmail.com)**
+
+All reports will be:
+
+* Handled confidentially
+* Investigated fairly
+* Addressed promptly
+
+---
+
+## ⚙️ Enforcement Process
+
+Violations will be handled in the following stages:
+
+### 1️⃣ Correction
+
+Private guidance for minor issues
+
+### 2️⃣ Warning
+
+Formal notice for repeated behavior
+
+### 3️⃣ Temporary Restriction
+
+Limited access to community participation
+
+### 4️⃣ Permanent Ban
+
+Removal from the project for severe or repeated violations
+
+---
+
+## 🧪 Alignment with STMATH Vision
+
+All contributors are expected to align with:
+
+```text
+✔ Educational clarity
+✔ Research integrity
+✔ Professional conduct
+✔ Collaborative mindset
+```
+
+---
+
+## 📜 Attribution
+
+This Code of Conduct is adapted from the **Contributor Covenant (v2.1)**
 https://www.contributor-covenant.org/version/2/1/code_of_conduct.html
+
+---
+
+## 💀 Final Note
+
+STMATH is not just a codebase.
+
+It is a:
+
+✔ Learning platform
+✔ Research system
+✔ Engineering framework
+
+👉 Respect and professionalism are non-negotiable.

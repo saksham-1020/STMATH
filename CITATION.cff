@@ -1,25 +1,52 @@
 cff-version: 1.2.0
-message: "If you use STMATH in your research, please cite it as below."
-title: "STMATH: Unified Math & AI Toolkit for Python"
-version: "1.0.8"
-doi: ""
-date-released: 2025-12-02
-url: "https://github.com/saksham-1020/STMATH"
+
+message: "If you use STMATH in your research, please cite it using the metadata below."
+
+title: "STMATH: A Zero-Wrapper Unified Mathematical and AI Framework Built from First Principles"
+
+version: "1.0.14"
+
+date-released: 2026-03-28
+
+url: "https://github.com/stmath-org/stmath"
+
+repository-code: "https://github.com/stmath-org/stmath"
+
+license: MIT
 
 authors:
   - family-names: Tomar
     given-names: Saksham
-    orcid: https://orcid.org/0009-0001-1691-9981
-    affiliation: Medi-Caps University, Indore, India
-
-repository-code: "https://github.com/saksham-1020/STMATH"
-license: MIT
+    orcid: "https://orcid.org/0009-0001-1691-9981"
+    affiliation: "Medicaps University, Indore, India"
 
 keywords:
   - mathematics
-  - scientific-computing
-  - machine-learning
-  - quantum-computing
-  - cryptography
-  - python
+  - numerical computing
+  - scientific computing
+  - machine learning
+  - deep learning
+  - natural language processing
+  - computer vision
+  - transformer
+  - autograd
+  - zero wrapper
+  - educational ai
 
+abstract: >
+  STMATH is a zero-wrapper, unified mathematical and artificial intelligence framework 
+  built entirely from first principles. It integrates numerical computing, machine learning, 
+  deep learning, NLP, computer vision, and transformer-based architectures into a single 
+  modular system. Unlike traditional libraries, STMATH avoids reliance on black-box numerical 
+  backends and instead implements core algorithms using iterative methods such as Newton-Raphson, 
+  Taylor series, and custom autograd mechanisms. The framework is designed for educational clarity, 
+  research experimentation, and transparent computation.
+
+preferred-citation:
+  type: software
+  title: "STMATH: A Zero-Wrapper Unified Mathematical and AI Framework"
+  authors:
+    - family-names: Tomar
+      given-names: Saksham
+  year: 2026
+  url: "https://github.com/stmath-org/stmath"
