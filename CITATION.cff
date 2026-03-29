@@ -4,7 +4,7 @@ message: "If you use STMATH in your research, please cite it using the metadata 
 
 title: "STMATH: A Zero-Wrapper Unified Mathematical and AI Framework Built from First Principles"
 
-version: "1.0.14"
+version: "1.0.15"
 
 date-released: 2026-03-28
 

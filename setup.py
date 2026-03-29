@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='stmath',
-    version='1.0.14',
+    version='1.0.15',
     author='Saksham Tomar',
     description='Unified Zero-Wrapper Math & AI Framework',
     long_description=open('README.md', encoding='utf-8').read(),

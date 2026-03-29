@@ -765,4 +765,4 @@ Stay connected with the STMATH development lifecycle and the author's profession
 💻 [GitHub Repo](https://github.com/saksham-1020/STMATH)
 
 💼 Professional Network: Connect with Saksham Tomar — For industrial collaborations, academic research inquiries, and technical outreach.
-💼 [LinkedIn Profile](https://www.linkedin.com/in/saksham-tomar) 
+💼 [LinkedIn Profile](https://www.linkedin.com/in/sakshamtomar55/) 

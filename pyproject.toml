@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "stmath"
-version = "1.0.14"
+version = "1.0.15"
 description = "STMATH: A Zero-Wrapper Unified Mathematical and AI Framework built from First Principles"
 readme = "README.md"
 requires-python = ">=3.8"
